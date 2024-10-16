@@ -1,0 +1,6 @@
+.courseBlock {
+    background-color: var(--block-background-color);
+    border-radius: 3px;
+
+    padding: 20px 30px;
+}

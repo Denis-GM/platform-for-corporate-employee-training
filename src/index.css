@@ -12,7 +12,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Временные переменные */
+  --block-background-color: rgb(67, 67, 67);
+  --block-border-background-color: rgb(124, 124, 124);
+  --text-color-1: rgb(231, 231, 231);
 }
+
+
+
+/* Удалить. Общие временные стили. */
+
+.temporary-page-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ^ Общие временные стили. */
+
 
 
 @media (prefers-color-scheme: light) {

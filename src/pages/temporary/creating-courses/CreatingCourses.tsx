@@ -1,7 +1,7 @@
 const CreatingCourses = () => {
     return (
         <>
-        Creating Courses
+            <div className="temporary-page-title">Creating Courses</div>
         </>
     );
 };

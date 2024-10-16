@@ -1,7 +1,7 @@
 const CheckingTasks = () => {
     return (
         <>
-        Checking Tasks
+            <div className="temporary-page-title">Checking Tasks</div>
         </>
     );
 };
