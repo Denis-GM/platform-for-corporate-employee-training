@@ -12,6 +12,7 @@ import Employees from './pages/temporary/employees/Employees';
 import CheckingTasks from './pages/temporary/сhecking-tasks/CheckingTasks';
 import CreatingCourses from './pages/temporary/creating-courses/CreatingCourses';
 import Employee from './pages/temporary/employee/Employee';
+import CheckingTask from './pages/temporary/checking-task/CheckingTask';
 
 
 function App() {
@@ -22,7 +23,10 @@ function App() {
         <Route path='course-library/' element={<CourseLibrary />}></Route>
         <Route path='employees/' element={<Employees />}></Route>
         <Route path='employees/:employeeID' element={<Employee />}></Route>
+
         <Route path='checking-tasks/' element={<CheckingTasks />}></Route>
+        <Route path='checking-tasks/:checkingTaskID' element={<CheckingTask />}></Route>
+
         <Route path='creating-courses/' element={<CreatingCourses />}></Route>
         <Route path='course-library/:courseID' element={<CoursePage />}></Route>
       </Route>
