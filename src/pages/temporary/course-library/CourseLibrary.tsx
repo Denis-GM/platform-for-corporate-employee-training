@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from "axios";
 import { useEffect, useState } from "react"
-import { ICourse } from "../../../interfaces/ICourse";
+import { ICourse } from "../../../interfaces/ICourseShort";
 import CourseBlock from "./components/CourseBlock";
 import styles from "./CourseLibrary.module.css";
 import { courses } from "../../../moсks/CoursesMockData";

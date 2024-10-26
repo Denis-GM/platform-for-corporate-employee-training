@@ -21,6 +21,8 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />} errorElement={<ErrorPage404 />}>
         <Route path='course-library/' element={<CourseLibrary />}></Route>
+        <Route path='course-library/:courseID' element={<CoursePage />}></Route>
+
         <Route path='employees/' element={<Employees />}></Route>
         <Route path='employees/:employeeID' element={<Employee />}></Route>
 

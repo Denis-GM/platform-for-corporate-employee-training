@@ -1,0 +1,31 @@
+.block {
+    margin: 45px auto;
+    background-color: var(--block-background-color);
+    /* width: 90%; */
+    border-radius: 7px;
+    padding: 30px 45px 50px;
+}
+
+.block__paddingButton_30px {
+    margin: 45px auto;
+    background-color: var(--block-background-color);
+    border-radius: 7px;
+    padding: 30px 45px 30px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section__content_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textEditorContainer {
+    margin: 45px auto;
+}

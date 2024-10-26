@@ -1,4 +1,4 @@
-import { IEmployeeForTask } from "../interfaces/IEmployeeForTask"; 
+import { IEmployeeForTask } from "../interfaces/IEmployee";
 
 export const employeesForTask : IEmployeeForTask[] =
     [

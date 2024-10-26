@@ -1,0 +1,18 @@
+.container {
+  background-color: rgb(69, 69, 69);
+  max-width: 90%;
+  padding: 15px 30px 30px 30px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.textEditor {
+  border: 1px solid black;
+  padding: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+  
+.public-DraftEditor-content {
+  min-height: 100px;  
+}

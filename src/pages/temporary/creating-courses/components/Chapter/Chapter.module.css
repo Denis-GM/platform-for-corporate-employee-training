@@ -1,0 +1,30 @@
+.block {
+    position: relative;
+    margin: 45px auto;
+    background-color: var(--block-background-color);
+    /* width: 90%; */
+    border-radius: 7px;
+    padding: 30px 45px 50px;
+}
+
+.chapterNumber {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnPanel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnPanel__button {
+    width: 45%;
+    height: 40px;
+}

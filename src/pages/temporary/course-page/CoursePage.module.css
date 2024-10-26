@@ -1,0 +1,23 @@
+.course {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 45px auto;
+    min-height: 30vh;
+    gap: 30px;
+
+    background-color: var(--block-background-color);
+    border-radius: 4px;
+    padding: 45px 60px;
+}
+
+.employeeNameList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employeeName {
+    display: flex;
+    gap: 10px;
+}

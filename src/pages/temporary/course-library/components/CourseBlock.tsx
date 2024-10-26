@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ICourse } from "../../../../interfaces/ICourse";
+import { ICourse } from "../../../../interfaces/ICourseShort";
 import { Link } from "react-router-dom";
 import styles from "./CourseBlock.module.css";
 
