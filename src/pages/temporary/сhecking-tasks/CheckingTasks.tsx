@@ -1,6 +1,6 @@
 import styles from "./CheckingTasks.module.css";
 import { employeesForTask } from "../../../moсks/EmployeeForTaskMockData";
-import { IEmployeeForTask } from "../../../interfaces/IEmployeeForTask";
+import { IEmployeeForTask } from "../../../interfaces/IEmployee";
 import EmployeeBlock from "./components/EmployeeBlock";
 
 const CheckingTasks = () => {

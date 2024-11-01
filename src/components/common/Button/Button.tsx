@@ -5,10 +5,10 @@ export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
     text?: string
 }
 
-const Button: FC<IButton> = (props: IButton) => {
+const Button: FC<IButton> = ({className, ...props}: IButton) => {
     return(
         <>
-            <button  className={styles.button} {...props}>
+            <button  className={`${className} ${styles.button}`} {...props}>
                 {props.children}
             </button>
         </>

@@ -21,6 +21,7 @@ const Input: FC<IInput> = (
                     {nameLabel}
                 </span>
                 <input
+                    name={props.name}
                     className={styles.input}
                     style={inputStyle} 
                     {...props}/>

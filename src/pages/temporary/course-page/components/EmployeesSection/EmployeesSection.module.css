@@ -1,0 +1,19 @@
+.title {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.employeeNameList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    padding-left: 20px;
+}
+
+.employeeName {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

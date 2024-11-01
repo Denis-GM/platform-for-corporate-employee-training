@@ -1,0 +1,24 @@
+.content {
+
+}
+
+.content__title {
+    font-size: 18px;
+}
+
+.content__list {
+    margin-top: 5px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content__listElement {
+
+}
+
+.content__link {
+    color: var(--text-color-1);
+    text-decoration: none;
+}

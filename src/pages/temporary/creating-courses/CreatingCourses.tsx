@@ -5,12 +5,15 @@ import { TextEditorProvider } from "../../../components/TextEditor/context";
 import TextEditor from "../../../components/TextEditor/TextEditor";
 import styles from "./CreatingCourses.module.css";
 import Chapter from "./components/Chapter/Chapter";
+import { useForm } from "react-hook-form";
 
 interface IChapterForm {
     chapterName: string
 }
 
 const CreatingCourses = () => {
+    // const { register, handleSubmit } = useForm<IFormInput>()
+    // const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data)
 
     // const [formFields, setFormFields] = useState<IChapterForm[]>([
     //     { chapterName: '' }
@@ -18,14 +21,18 @@ const CreatingCourses = () => {
     const [formFields, setFormFields] = useState<IChapterForm[]>([]);
     
     const handleFormChange = (index: number) => (event: ChangeEvent<HTMLInputElement>) => {
-        console.log(event.target.value);
         const data = [...formFields];
         data[index][event.target.name] = event.target.value;
         setFormFields(data);
     }
 
-    const submit = (e: any) => {
-        e.preventDefault();
+    const handleSubmit = (event: any) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        const courseName = formData.get('courseName');
+        const description = formData.get('description');
+
+        console.log(courseName, description);
         console.log(formFields)
     }
 
@@ -46,15 +53,17 @@ const CreatingCourses = () => {
         <>
             <div className="temporary-page-title">Creating Courses</div>
 
-            <form onSubmit={submit}>
+            <form onSubmit={handleSubmit}>
                 <div className={styles.block}>
                     <div className={styles.section}>
                         <div>Обложка курса...</div>
                         <Input 
+                            name="courseName"
                             width={'40%'} 
                             nameLabel={"Название курса"} 
                             type="text" />
                         <Input 
+                            name="description"
                             width={'60%'} 
                             nameLabel={"Описание курса"} 
                             type="text" />
@@ -80,7 +89,7 @@ const CreatingCourses = () => {
                 </Button>
             </div>
             {/* <div className={styles.block}> */}
-            <Button onClick={submit}>Сохранить</Button>
+            <Button onClick={handleSubmit}>Сохранить</Button>
             {/* </div> */}
 
             <div className={styles.textEditorContainer}>
@@ -88,7 +97,7 @@ const CreatingCourses = () => {
                     <TextEditor />
                 </TextEditorProvider>
             </div>
-            {/* <iframe src="https://vk.com/video_ext.php?oid=-9594364&id=456239279&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe> */}
+            {/* <iframe src="https://vk.com/video_ext.php?oid=-9594364&id=456239279&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe></> */}
         </>
     );
 };

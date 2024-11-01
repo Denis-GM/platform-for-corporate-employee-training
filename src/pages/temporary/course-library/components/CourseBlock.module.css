@@ -4,3 +4,13 @@
 
     padding: 20px 30px;
 }
+
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 14px;
+    margin: 20px 0;
+}

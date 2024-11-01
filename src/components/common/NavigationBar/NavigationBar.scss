@@ -1,0 +1,199 @@
+@import '../../../vars';
+
+$decorative-panel-color: #1F1E30;
+$navigation-bar-color: #FFFFFF;
+$protruding-left-block-color: #1657FF;
+$protruding-bottom-block: #8300D3;
+
+$title-color: #332A7C;
+
+.decorative-panel {
+    position: relative;
+    margin: 0 auto;
+
+    max-width: 1424px;
+    width: 100%;
+
+    background-color: $decorative-panel-color;
+    padding: 16px 51px 21px 53px;
+    border-radius: 30px;
+}
+
+.virtual-navigation-bar {
+    position: relative;
+    margin: 0 auto;
+
+    max-width: 1320px;
+    width: 100%;
+    height: 145px;
+}
+
+.navigation-bar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-color: $navigation-bar-color;
+    border-radius: 30px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    .left-part {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        .navigation-bar__title {
+            margin: 17px 0 0 24px;
+
+            // font-family: Plus Jakarta Sans;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 45px;
+            text-align: left;
+            color: $title-color;
+
+            user-select: none;
+        }
+
+        .navigation-bar__links {
+            margin-left: 27px;
+
+            display: flex;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .navigation-bar__links a {
+            text-decoration: none;
+            color: #1A2A7A;
+        }
+
+        .link {
+            user-select: none;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            padding-right: 27px;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            background-size: 24px 24px;
+        } 
+
+        .link__image_library {
+            background-image: url("../../../assets/images/nav/library.svg");
+        }
+
+        .link__image_courses {
+            background-image: url("../../../assets/images/nav/my-courses.svg");
+
+        }
+
+        .link__image_profile {
+            background-image: url("../../../assets/images/nav/profile.svg");
+
+        }
+
+        .link__image_notifications {
+            background-image: url("../../../assets/images/nav/notifications.svg");
+
+        }
+
+        .active {
+            position: relative;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        .active::after {
+            content: "";
+            // border-radius: 19px;
+            display: block;
+            border-radius: 19px;
+            width: calc(100% + 27px);
+            height: 4px;
+            background-color: #1657FF;
+        }
+    }
+
+    .right-part {
+        position: relative;
+        height: 60px;
+        margin: 24px 21px 0 0;
+
+        .profile {
+            position: relative;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+        
+            .profile__text {
+                position: relative;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3px;
+            
+                .profile__name {
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 19px;
+                    text-align: right;
+                }
+        
+                .profile__post {
+                    font-family: Poppins;
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: 13.2px;
+                    letter-spacing: 0.5px;
+        
+                    text-align: right;
+                }
+            }
+    
+            .profile__icon {
+                width: 50px;
+                height: 100%;
+
+                background-image: url("../../../assets/images/nav/avatar.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.protruding-left-block {
+    position: absolute;
+    left: -9px;
+    bottom: -1px;
+
+    width: 445px;
+    height: 121px;
+    background-color: $protruding-left-block-color;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.protruding-bottom-block {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+
+    width: 178px;
+    height: 129px;
+    background-color: $protruding-bottom-block;
+    border-radius: 30px;
+    z-index: 0;
+}

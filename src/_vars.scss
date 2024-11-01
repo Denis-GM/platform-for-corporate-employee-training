@@ -1,0 +1,58 @@
+
+/* Временные переменные */
+
+$default-dark-background-color: #242424;
+$default-dark-color: #242424;
+
+$default-light-background-color: #F5F6F7;
+$default-light-color: #F5F6F7;
+
+$block-background-color: rgb(67, 67, 67);
+$block-border-background-color: rgb(124, 124, 124);
+$text-color-1: rgb(231, 231, 231);
+
+/* Временные переменные */
+
+:root {
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: var(--default-light-background-color);
+
+    // color: rgba(51, 42, 124, 0.7);
+    // background-color: var(--default-light-background-color);
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    $white-color: #ffffff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Удалить. Общие временные стили. */
+
+.temporary-page-title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+/* ^ Общие временные стили. */
+
+
+
+@media (prefers-color-scheme: light) {
+    $color: #242424;
+    $background-color: rgba(255, 255, 255, 0.87);
+}
