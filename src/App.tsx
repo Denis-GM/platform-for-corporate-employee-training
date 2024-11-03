@@ -6,7 +6,7 @@ import {
     RouterProvider, 
     Routes
 } from 'react-router-dom';
-import MainLayout from './layouts/main-layout/MainLayout';
+import MainLayout from './layouts/AdminLayout/AdminLayout';
 import ErrorPage404 from './pages/ErrorPage404/ErrorPage404';
 import CourseLibrary from './pages/temporary/course-library/CourseLibrary';
 import CoursePage from './pages/temporary/course-page/CoursePage';
